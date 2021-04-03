@@ -5,7 +5,8 @@
  * @todo Dateの引数を-1する←日は0～30？1～31？
  */
 
-import drarChartDart from "./drawChart/drawChartDart.mjs";
+import drawChartDart from "./drawChart/drawChartDart.mjs";
+import drawChartShort from "./drawChart/drawChartShort.mjs";
 
 // ロード
 google.charts.load("current",
@@ -15,5 +16,5 @@ google.charts.load("current",
 	});
 
 // drawChartを実行
-// ダート
-google.charts.setOnLoadCallback(drarChartDart);
+google.charts.setOnLoadCallback(drawChartDart);
+google.charts.setOnLoadCallback(drawChartShort);
