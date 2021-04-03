@@ -1,5 +1,5 @@
 /**
- * チャートの色　グレード別
+ * チャートの色 グレード別
  * @type {object}
  * @property {string} G1
  * @property {string} G2
