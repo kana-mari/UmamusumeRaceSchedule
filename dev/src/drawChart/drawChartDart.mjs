@@ -1,4 +1,5 @@
 import dart from "./../raceSchedule/dart.mjs";
+import option from "./option.mjs";
 
 /**
  * drawChartコールバック関数
@@ -15,17 +16,6 @@ const drawChartDart = function drawChartDartTL() {
 	dataTable.addColumn({ type: 'date', id: 'Start' });
 	dataTable.addColumn({ type: 'date', id: 'End' });
 	dataTable.addRows(dart);
-
-	const option = {
-		timeline: {
-			barLabelStyle: {
-				fontName: 'system-ui',
-				fontSize: 10
-			},
-			width: 2500,
-		}
-	}
-
 	chart.draw(dataTable, option);
 }
 
