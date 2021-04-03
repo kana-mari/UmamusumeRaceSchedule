@@ -5,9 +5,7 @@
  * @todo Dateの引数を-1する←日は0～30？1～31？
  */
 
-import drawChart from "./chart/drawChart.mjs";
-
-// レースデータ
+import drarChartDart from "./drawChart/drarChartDart";
 
 // ロード
 google.charts.load("current",
@@ -17,13 +15,5 @@ google.charts.load("current",
 	});
 
 // drawChartを実行
-// 短
-google.charts.setOnLoadCallback(drawChart('js-short', shortDist));
-// マイル
-google.charts.setOnLoadCallback(drawChart());
-// 中1
-google.charts.setOnLoadCallback(drawChart());
-// 長
-google.charts.setOnLoadCallback(drawChart());
 // ダート
-google.charts.setOnLoadCallback(drawChart());
+google.charts.setOnLoadCallback(drarChartDart);
