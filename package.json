@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "Browser-Sync": "browser-sync start --server --startPath './dev/index.html'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "kana-mari",
