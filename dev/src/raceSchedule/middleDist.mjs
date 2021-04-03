@@ -1,4 +1,4 @@
-import chartColor from "./color";
+import chartColor from "./color.mjs";
 
 /**
  * @type {Array}
