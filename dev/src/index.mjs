@@ -5,7 +5,7 @@
  * @todo Dateの引数を-1する←日は0～30？1～31？
  */
 
-import drarChartDart from "./drawChart/drarChartDart";
+import drarChartDart from "./drawChart/drawChartDart.mjs";
 
 // ロード
 google.charts.load("current",
