@@ -1,0 +1,37 @@
+import chartColor from "./color.mjs";
+
+const dart = [
+	['G1', 'JBCレディスC', chartColor.g1, new Date('2002', '10', '1'), new Date('2002', '10', '15')],
+	['G1', 'JBCレディスC', chartColor.g1, new Date('2003', '10', '1'), new Date('2003', '10', '15')],
+	['G1', 'チャンピオンズC', chartColor.g1, new Date('2002', '11', '1'), new Date('2002', '11', '15')],
+	['G1', 'チャンピオンズC', chartColor.g1, new Date('2003', '11', '1'), new Date('2003', '11', '15')],
+	['G1', 'フェブラリーS', chartColor.g1, new Date('2003', '1', '16'), new Date('2003', '1', '28')],
+	['G2', '東海S', chartColor.g2, new Date('2003', '0', '16'), new Date('2003', '0', '31')],
+	['G3', 'アンタレスS', chartColor.g3, new Date('2003', '3', '1'), new Date('2003', '3', '15')],
+	['G3', 'エルムS', chartColor.g3, new Date('2002', '7', '1'), new Date('2002', '7', '15')],
+	['G3', 'エルムS', chartColor.g3, new Date('2003', '7', '1'), new Date('2003', '7', '15')],
+	['G3', 'マーチS', chartColor.g3, new Date('2003', '2', '16'), new Date('2003', '2', '31')],
+	['G3', 'みやこS', chartColor.g3, new Date('2002', '10', '1'), new Date('2002', '10', '15')],
+	['G3', 'みやこS', chartColor.g3, new Date('2003', '10', '1'), new Date('2003', '10', '15')],
+	['G3', 'ユニコーンS', chartColor.g3, new Date('2002', '5', '16'), new Date('2002', '5', '30')],
+	['G3', 'レパードS', chartColor.g3, new Date('2002', '7', '1'), new Date('2002', '7', '15')],
+	['G3', '武蔵野S', chartColor.g3, new Date('2002', '10', '1'), new Date('2002', '10', '15')],
+	['G3', '武蔵野S', chartColor.g3, new Date('2003', '10', '1'), new Date('2003', '10', '15')],
+	['G1', 'JBCスプリント', chartColor.g1, new Date('2002', '10', '1'), new Date('2002', '10', '15')],
+	['G1', 'JBCスプリント', chartColor.g1, new Date('2003', '10', '1'), new Date('2003', '10', '15')],
+	['G3', 'カペラS', chartColor.g3, new Date('2002', '11', '1'), new Date('2002', '11', '15')],
+	['G3', 'カペラS', chartColor.g3, new Date('2003', '11', '1'), new Date('2003', '11', '15')],
+	['G3', 'プロキオンS', chartColor.g3, new Date('2002', '6', '1'), new Date('2002', '6', '15')],
+	['G3', 'プロキオンS', chartColor.g3, new Date('2003', '6', '1'), new Date('2003', '6', '15')],
+	['G3', '根岸S', chartColor.g3, new Date('2003', '0', '16'), new Date('2003', '0', '31')],
+	['G1', 'JBCクラシック', chartColor.g1, new Date('2002', '10', '1'), new Date('2002', '10', '15')],
+	['G1', 'JBCクラシック', chartColor.g1, new Date('2003', '10', '1'), new Date('2003', '10', '15')],
+	['G1', 'JPダートダービー', chartColor.g1, new Date('2002', '6', '1'), new Date('2002', '6', '15')],
+	['G1', '帝王賞', chartColor.g1, new Date('2003', '5', '16'), new Date('2003', '5', '30')],
+	['G1', '東京大賞典', chartColor.g1, new Date('2002', '11', '16'), new Date('2002', '11', '31')],
+	['G1', '東京大賞典', chartColor.g1, new Date('2003', '11', '16'), new Date('2003', '11', '31')],
+	['G3', 'シリウスS', chartColor.g3, new Date('2002', '8', '16'), new Date('2002', '8', '30')],
+	['G3', 'シリウスS', chartColor.g3, new Date('2003', '8', '16'), new Date('2003', '8', '30')],
+	['G3', '平安S', chartColor.g3, new Date('2003', '4', '16'), new Date('2003', '4', '31')]];
+
+export default dart;

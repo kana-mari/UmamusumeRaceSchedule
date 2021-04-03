@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>距離別レーススケジュール　ウマ娘</title>
+	<meta name="description" content="ゲーム「ウマ娘～」の距離別？レーススケジュールです。">
+</head>
+
+<body>
+	<main>
+		<article>
+			<header>
+				<h1>ウマ娘 距離別レーススケジュール</h1>
+				<p>descriptionと一緒</p>
+			</header>
+			<section>
+				<h2>短距離（重賞）</h2>
+				<div class="l-wrapperTl">
+					<figure id="js-short"></figure>
+				</div>
+			</section>
+		</article>
+	</main><!-- Google Charts-->
+	<script src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="module">
+		// ロード
+		google.charts.load("current",
+			{
+				packages: ['timeline'],
+				'language': 'ja'
+			});
+
+		import drawChart from "./src/chart/drawChart.mjs";
+		import shortDist from "./src/raceSchedule/shortDist.mjs";
+
+		// drawChartを実行
+		// 短
+		google.charts.setOnLoadCallback(drawChart('js-short', shortDist));
+	</script>
+</body>
+
+</html>

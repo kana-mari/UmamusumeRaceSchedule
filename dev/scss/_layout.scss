@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 700px 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px;
+	grid-template-areas: "l-space article r-space";
+}
+
+article {
+	grid-area: article;
+}
