@@ -11,7 +11,7 @@ module.exports = merge(commonConfig, {
 	// ファイルの出力設定
 	output: {
 		// 出力ファイルのディレクトリ名
-		path: `${__dirname}/dev/src`,
+		path: `${__dirname}/../dev/src`,
 
 		// 出力ファイル名
 		filename: 'bundle.js'
