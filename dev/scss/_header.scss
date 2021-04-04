@@ -1,0 +1,8 @@
+@charset 'utf-8';
+
+@use "./variable";
+
+.header{
+	background-color: variable.$accent-color;
+	color: #FFFFFF;
+}
