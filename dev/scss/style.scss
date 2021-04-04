@@ -5,9 +5,13 @@
 
 // 共通設定
 @use "./common";
+
 // レイアウト
 @use "./layout";
 
 // ブロック
+@use "./header";
+@use "./card";
 @use "./heading";
 @use "./timeline";
+@use "./footer";
