@@ -10,15 +10,15 @@
 		color: white;
 		background: linear-gradient(180deg, rgba(100, 221, 23, 1) 0%, #aeea00 100%);
 		font-family: 'M PLUS 1p', sans-serif;
-		font-weight: 600;
-		text-shadow: 1px 1px 3px #558b2f;
+		font-weight: 800;
+		text-shadow: 0px 0px 6px #558b2f;
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
 	}
 
 	&__titlePrepend {
-		filter: drop-shadow(1px 1px 3px #558b2f);
+		filter: drop-shadow(0px 0px 3px #558b2f);
 		margin-right: 0.3em;
 	}
 
