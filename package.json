@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "Browser-Sync": "browser-sync start --server --startPath './dev/index.html'",
+    "Browser-Sync:dev": "browser-sync start --server --startPath './dev/index.html'",
+    "Compile:sass-all": "run-s Compile:sass2css Autoprefixer",
+    "Compile:sass2css": "sass dev/scss/style.scss --style=compressed public/css/style.min.css",
+    "Autoprefixer": "postcss public/css/style.min.css --map --use autoprefixer --output public/css/style.min.css",
+    "webpack:development": "webpack --config ./webpack/webpack.config.dev.js",
+    "webpack:production": "webpack --config ./webpack/webpack.config.pro.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "kana-mari",
