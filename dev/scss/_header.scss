@@ -5,9 +5,11 @@
 .header {
 	background-color: variable.$accent-color;
 	color: #FFFFFF;
+	padding: 2rem 0;
 
 	&__title {
 		font-family: 'M PLUS 1p', sans-serif;
 		font-weight: 900;
+		font-size: 2.5rem;
 	}
 }
