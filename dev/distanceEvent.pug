@@ -10,39 +10,45 @@ html(lang="ja")
 		// CSS
 		link(rel="stylesheet", href="style.css")
 		// google fonts
-		link(rel='preconnect' href='https://fonts.gstatic.com')
-		link(href='https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;600;700;800;900&display=swap' rel='stylesheet')
+		link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin="anonymous")
+		link(href='https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;600;700;800;900&display=swap' rel='stylesheet' crossorigin="anonymous")
 		// SEO
 		meta(name="description", content="ゲーム「ウマ娘～」の距離別？レーススケジュールです。")
 		// Todo: robot
 		// Todo: OGP
 	body
-		main
-			article
-				header 
-					h1 ウマ娘 距離別レーススケジュール
-					p descriptionと一緒
-				section 
-					h2 短距離（重賞）
+		main.main
+			article.article
+				header.header
+					h1.header__title ウマ娘 距離別レーススケジュール
+					p.header__description descriptionと一緒
+				section.card
+					h2.card__title 短距離
+					p.card__text 重賞
 					div.l-wrapperTl
 						figure#js-short.timeline
-				section 
-					h2 マイル（重賞）
+				section.card 
+					h2.card__title マイル
+					p.card__text 重賞
 					div.l-wrapperTl
 						figure#js-mile.timeline
-				section 
-					h2 中距離（重賞）
+				section.card 
+					h2.card__title 中距離
+					p.card__text 重賞
 					div.l-wrapperTl
 						figure#js-middle.timeline
-				section 
-					h2 長距離
-					p OP・Pre-OP込み
+				section.card
+					h2.card__title 長距離
+					p.card__text 重賞・OP
 					div.l-wrapperTl
 						figure#js-long.timeline
-				section 
-					h2 ダート（重賞）
+				section.card
+					h2.card__title ダート
+					p.card__text 重賞
 					div.l-wrapperTl
 						figure#js-dart.timeline
-		// Google Charts
-		script(src="https://www.gstatic.com/charts/loader.js")
-		script(src="index.mjs" type="module")
+		footer
+			address はち
+				a(href="http://") @8_hachi
+		script(src="https://www.gstatic.com/charts/loader.js" crossorigin="anonymous")
+		script(src="./src/bundle.js")
