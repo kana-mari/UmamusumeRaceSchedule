@@ -17,10 +17,10 @@
 
 	a {
 		color: white;
-	}
 
-	&:hover,
-	&:active {
-		background-color: rgba(255, 255, 255, 0.25);
+		&:hover,
+		&:active {
+			background-color: rgba(255, 255, 255, 0.25);
+		}
 	}
 }
