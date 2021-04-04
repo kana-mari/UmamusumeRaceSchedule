@@ -1,0 +1,11 @@
+@charset 'utf-8';
+
+.footer {
+	background-color: var(--hf-color);
+	color: white;
+	padding: 1em 0;
+
+	>* {
+		grid-column: main;
+	}
+}
