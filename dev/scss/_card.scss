@@ -1,0 +1,26 @@
+@charset 'utf-8';
+
+.card {
+	border: 1px solid rgba(100, 221, 23, 1);
+	margin: 2em 1em;
+
+	&__title {
+		margin-top: 0;
+		padding: 0.5rem 1rem;
+		color: white;
+		background: linear-gradient(180deg, rgba(100, 221, 23, 1) 0%, #aeea00 100%);
+		font-family: 'M PLUS 1p', sans-serif;
+		font-weight: 600;
+		text-shadow: 1px 1px 3px #558b2f;
+		display: flex;
+		justify-content: flex-start;
+		align-items: baseline;
+	}
+
+	&__titlePrepend {
+		filter: drop-shadow(1px 1px 3px #558b2f);
+		margin-right: 0.3em;
+	}
+
+	&__text {margin: 0.5rem 1rem;}
+}
