@@ -8,3 +8,4 @@ public/img
 *svg
 *.xd
 firebase-debug.log
+/.firebase
