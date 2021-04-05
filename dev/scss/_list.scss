@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.list {
+	&__item {
+		margin: 0.5rem 0;
+
+		&::marker {
+			color: #e7f7fa;
+		}
+	}
+}
