@@ -6,7 +6,7 @@
 .card {
 	@include mixin.layout;
 	border: 1px solid variable.$card-main-color;
-	margin: 2em 1em;
+	margin: 4rem 1rem;
 
 	>* {
 		@include mixin.widthFull;
