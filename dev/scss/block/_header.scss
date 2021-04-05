@@ -5,9 +5,11 @@
 .header {
 	@include mixin.headerFooterCommon;
 	@include mixin.layout;
->*{
-	@include mixin.widthMain;
-}
+
+	>* {
+		@include mixin.widthMain;
+	}
+
 	&__title {
 		font-family: 'M PLUS 1p', sans-serif;
 		font-weight: 900;
