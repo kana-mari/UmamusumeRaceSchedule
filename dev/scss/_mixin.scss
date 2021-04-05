@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+@use "./variable";
+
+// 幅を指定するmixin
+
+// ヘッダ、フッタ共通設定
+@mixin headerFooterCommon {
+	background-color: variable.$accent-color;
+	color: #FFFFFF;
+	text-shadow: 0 0 3px #055966;
+	padding: 2rem 0;
+}
