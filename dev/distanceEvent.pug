@@ -36,13 +36,22 @@ html(lang="ja")
 		main.main
 			article.article
 				header.header
-					h1.header__title ウマ娘 重賞距離別レーススケジュール表
-					p.header__description ゲーム「ウマ娘 プリティーダービー」の距離別レーススケジュール表です。URAファイナルズのコース距離調整にどうぞ。
-					p.header__description 年は以下のように読み替えてください。
-					ul
-						li 2001→ジュニア級（1年目）
-						li 2002→クラシック級（2年目）
-						li 2003→シニア級（3年目）
+					h1(class='header__title')
+						div ウマ娘 
+							wbr
+							| 距離別レーススケジュール表
+
+					.header__description
+						p ゲーム「
+							cite ウマ娘 プリティーダービー
+							| 」の距離別レーススケジュール表です。
+							br
+							| URAファイナルズのコース距離調整にどうぞ。
+						p 年は以下のように読み替えてください。
+						ul.list
+							li(class='list__item') 2001→ジュニア級（1年目）
+							li(class='list__item') 2002→クラシック級（2年目）
+							li(class='list__item') 2003→シニア級（3年目）
 				section.card
 					h2.card__title 短距離
 						img.card__titlePrepend(src="./../public/img/icon_horseshoe_WH.svg", width="20", height="20", alt="")
