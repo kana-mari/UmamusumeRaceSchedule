@@ -3,18 +3,27 @@
 @use "./../mixin";
 
 .header {
-	@include mixin.headerFooterCommon;
-	@include mixin.layout;
+	&__title {
+		@include mixin.headerFooterCommon;
+		@include mixin.layout;
 
-	>* {
-		@include mixin.widthMain;
+		>div {
+			@include mixin.widthMain;
+
+			font-family: 'M PLUS 1p', sans-serif;
+			font-weight: 900;
+			font-size: 2.5rem;
+			line-height: 1.1;
+			margin-bottom: 1rem;
+		}
 	}
 
-	&__title {
-		font-family: 'M PLUS 1p', sans-serif;
-		font-weight: 900;
-		font-size: 2.5rem;
-		line-height: 1.1;
-		margin-bottom: 1rem;
+	&__description {
+		@include mixin.headerFooterCommon;
+		@include mixin.layout;
+
+		>* {
+			@include mixin.widthMain;
+		}
 	}
 }
