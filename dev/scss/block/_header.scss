@@ -3,7 +3,7 @@
 @use "./../mixin";
 
 .header {
-	@include headerFooterCommon;
+	@include mixin.headerFooterCommon;
 
 	&__title {
 		font-family: 'M PLUS 1p', sans-serif;
