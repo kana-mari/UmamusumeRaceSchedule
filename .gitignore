@@ -7,3 +7,4 @@ public/img
 *.png
 *svg
 *.xd
+firebase-debug.log
