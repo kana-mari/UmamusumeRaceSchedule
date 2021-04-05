@@ -7,8 +7,8 @@
 @use "./common";
 
 // ブロック
-@use "./header";
-@use "./list";
-@use "./card";
-@use "./timeline";
-@use "./footer";
+@use "./block/header";
+@use "./block/list";
+@use "./block/card";
+@use "./block/timeline";
+@use "./block/footer";
