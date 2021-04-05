@@ -6,7 +6,7 @@
 @mixin layout {
 	display: grid;
 	grid-template-columns:
-		[full-start] minmax(1em, 1fr) [main-start] minmax(0, 40em) [main-end] minmax(1em, 1fr) [full-end];
+		[full-start] minmax(1rem, 1fr) [main-start] minmax(0, 40rem) [main-end] minmax(1rem, 1fr) [full-end];
 }
 
 @mixin widthMain {
