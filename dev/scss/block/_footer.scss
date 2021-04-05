@@ -4,9 +4,10 @@
 
 .footer {
 	@include mixin.headerFooterCommon;
+	@include mixin.layout;
 
 	>* {
-		grid-column: main;
+		@include mixin.widthMain
 	}
 
 	address {

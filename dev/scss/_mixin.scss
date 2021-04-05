@@ -3,6 +3,19 @@
 @use "./variable";
 
 // 幅を指定するmixin
+@mixin layout {
+	display: grid;
+	grid-template-columns:
+		[full-start] minmax(1em, 1fr) [main-start] minmax(0, 40em) [main-end] minmax(1em, 1fr) [full-end];
+}
+
+@mixin widthMain {
+	grid-column: main;
+}
+
+@mixin widthFull {
+	grid-column: full;
+}
 
 // ヘッダ、フッタ共通設定
 @mixin headerFooterCommon {

@@ -1,8 +1,15 @@
 @charset 'utf-8';
 
+@use "./../mixin";
+
 .card {
+	@include mixin.layout;
 	border: 1px solid rgba(100, 221, 23, 1);
 	margin: 2em 1em;
+
+	>* {
+		@include mixin.widthFull;
+	}
 
 	&__title {
 		margin-top: 0;
@@ -22,5 +29,7 @@
 		margin-right: 0.3em;
 	}
 
-	&__text {margin: 0.5rem 1rem;}
+	&__text {
+		margin: 0.5rem 1rem;
+	}
 }
