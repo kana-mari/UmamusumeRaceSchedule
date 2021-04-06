@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "Browser-Sync:dev": "browser-sync start --server --startPath './dev/index.html'",
+    "Browser-Sync:public": "browser-sync start --server --startPath './public/index.html'",
     "Compile:sass-all": "run-s Compile:sass2css Autoprefixer",
     "Compile:sass2css": "sass dev/scss/style.scss --style=compressed public/css/style.min.css",
     "Autoprefixer": "postcss public/css/style.min.css --map --use autoprefixer --output public/css/style.min.css",
