@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-@use "./variable";
-
 // 幅を指定するmixin
 @mixin layout {
 	display: grid;
@@ -19,7 +17,7 @@
 
 // ヘッダ、フッタ共通設定
 @mixin headerFooterCommon {
-	background-color: variable.$accent-color;
+	background-image: linear-gradient( 0deg, #ABDCFF 0%, #0396FF 80%);
 	color: #FFFFFF;
 	text-shadow: 0 0 3px #055966;
 	padding: 2rem 0;
