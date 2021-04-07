@@ -5,4 +5,5 @@
 .socialPlugin {
 	@include mixin.layout;
 	@include mixin.widthMain;
+	margin-bottom: 4rem;
 }
