@@ -5,8 +5,4 @@
 .socialPlugin {
 	@include mixin.layout;
 	@include mixin.widthMain;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
 }
