@@ -3,9 +3,7 @@ node_modules/
 dev/src/bundle.js
 public/css
 public/src
-public/img
 *.png
-*svg
 *.xd
 firebase-debug.log
 /.firebase
