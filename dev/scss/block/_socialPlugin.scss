@@ -3,8 +3,8 @@
 @use "./../mixin";
 
 .socialPlugin {
-	@include layout;
-	@include widthMain;
+	@include mixin.layout;
+	@include mixin.widthMain;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
