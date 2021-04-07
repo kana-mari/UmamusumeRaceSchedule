@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+@use "./../mixin";
+
+.socialPlugin {
+	@include layout;
+	@include widthMain;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
