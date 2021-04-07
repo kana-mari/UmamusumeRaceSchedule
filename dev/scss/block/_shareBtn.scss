@@ -3,7 +3,7 @@
 
 .l-shareBtnWrapper {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: flex-start;
 	align-items: flex-start;
 }
@@ -11,13 +11,18 @@
 .shareBtn {
 	@mixin btn {
 		margin-right: 1rem;
+		padding: 0.25em;
+		color: white;
+		text-decoration: none;
 	}
 
-	&--twitter {
+	>iframe {
 		@include btn;
+		background-color: blue;
 	}
 
 	&--line {
 		@include btn;
+		background-color: green;
 	}
 }
