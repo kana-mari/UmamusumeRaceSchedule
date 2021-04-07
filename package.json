@@ -11,10 +11,12 @@
     "Autoprefixer": "postcss public/css/style.min.css --map --use autoprefixer --output public/css/style.min.css",
     "webpack:development": "webpack --config ./webpack/webpack.config.dev.js",
     "webpack:production": "webpack --config ./webpack/webpack.config.pro.js",
+    "firebase:preview": "firebase hosting:channel:deploy release_preview",
+    "firebase:deploy": "firebase deploy --only hosting",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "kana-mari",
-  "license": "ISC",
+  "license": "None",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "htmlhint": "^0.14.2",
