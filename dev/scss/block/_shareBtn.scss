@@ -13,19 +13,15 @@
 .shareBtn {
 	@mixin btn {
 		margin-right: 1rem;
-		padding: 0.25em;
-		color: white;
-		font-size: 0.8em;
-		text-decoration: none;
 	}
 
 	&--twitter {
 		@include btn;
-		background-color: #1DA1F2;
+		color: #1DA1F2;
 	}
 
 	&--line {
 		@include btn;
-		background-color: #06c655;
+		color: #06c655;
 	}
 }
