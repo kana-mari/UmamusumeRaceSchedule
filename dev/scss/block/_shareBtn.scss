@@ -11,18 +11,44 @@
 }
 
 .shareBtn {
+
+	// ボタン
 	@mixin btn {
+		color: #fff;
 		margin-right: 1rem;
-		font-size: 3.5rem;
+		padding: 15px;
+		font-size: 0.9em;
+		text-decoration: none;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	// アイコン部分
+	@mixin prepend ($ratio) {
+		aspect-ratio: $ratio;
+		max-width: none;
+		margin-right: 30px
 	}
 
 	&--twitter {
 		@include btn;
-		color: #1DA1F2;
+		background-color: #1DA1F2;
 	}
 
 	&--line {
 		@include btn;
-		color: #06c655;
+		background-color: #06c655;
+	}
+
+	&__prepend {
+		&--twitter {
+			@include prepend(4/1);
+		}
+
+		&--line {
+			@include prepend(1/1);
+		}
 	}
 }
