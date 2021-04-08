@@ -14,6 +14,8 @@
 	// 変数
 	// スペースの基準
 	$space: 8px;
+	$twitter-color: #1DA1F2;
+	$line-color: #00b900;
 
 	// mixin
 	// ボタン
@@ -29,6 +31,10 @@
 		align-items: center;
 	}
 
+	@mixin hover ($color) {
+		background-color: lighten($color, 25%);
+	}
+
 	// アイコン部分
 	@mixin prepend ($ratio) {
 		aspect-ratio: $ratio;
@@ -39,13 +45,23 @@
 	// スタイル
 	&--twitter {
 		@include btn;
-		background-color: #1DA1F2;
+		background-color: $twitter-color;
+
+		&:hover,
+		&active {
+			@include hover($twitter-color);
+		}
 	}
 
 	&--line {
 		@include btn;
-		background-color: #00b900;
+		background-color: $line-color;
 		padding: 0 $space 0 $space/2;
+
+		&:hover,
+		&active {
+			@include hover($line-color);
+		}
 	}
 
 	&__prepend {
