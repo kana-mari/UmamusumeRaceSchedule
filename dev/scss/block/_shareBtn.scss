@@ -31,10 +31,6 @@
 		align-items: center;
 	}
 
-	@mixin hover ($color) {
-		background-color: lighten($color, 25%);
-	}
-
 	// アイコン部分
 	@mixin prepend ($ratio) {
 		aspect-ratio: $ratio;
@@ -47,21 +43,12 @@
 		@include btn;
 		background-color: $twitter-color;
 
-		&:hover,
-		&active {
-			@include hover($twitter-color);
-		}
 	}
 
 	&--line {
 		@include btn;
 		background-color: $line-color;
 		padding: 0 $space 0 $space/2;
-
-		&:hover,
-		&active {
-			@include hover($line-color);
-		}
 	}
 
 	&__prepend {
