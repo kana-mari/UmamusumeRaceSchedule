@@ -25,18 +25,15 @@
 		padding: $space;
 		font-size: 0.8em;
 		text-decoration: none;
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: flex-start;
-		align-items: center;
 	}
 
 	// アイコン部分
-	@mixin prepend ($ratio) {
-		aspect-ratio: $ratio;
+	@mixin body {
 		max-width: initial;
-		margin-right: $space;
 	}
+
+	// ホバー・タップ時エフェクト
+
 
 	// スタイル
 	&--twitter {
@@ -48,17 +45,16 @@
 	&--line {
 		@include btn;
 		background-color: $line-color;
-		padding: 0 $space 0 $space/2;
+		padding: 1px $space/2;
 	}
 
-	&__prepend {
+	&__body {
 		&--twitter {
-			@include prepend('5 / 4');
+			@include body;
 		}
 
 		&--line {
-			@include prepend('1 / 1');
-			margin-right: $space;
+			@include body;
 		}
 	}
 }
