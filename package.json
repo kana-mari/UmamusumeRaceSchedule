@@ -19,6 +19,7 @@
   "license": "None",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
+    "hover.css": "^2.3.2",
     "htmlhint": "^0.14.2",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.2.9",
