@@ -11,13 +11,15 @@
 }
 
 .shareBtn {
+	// スペースの基準
+	$space: 20px;
 
 	// ボタン
 	@mixin btn {
 		color: #fff;
 		margin-right: 1rem;
-		padding: 15px;
-		font-size: 0.9em;
+		padding: $space / 2;
+		font-size: 0.8em;
 		text-decoration: none;
 		display: flex;
 		flex-wrap: nowrap;
@@ -28,8 +30,8 @@
 	// アイコン部分
 	@mixin prepend ($ratio) {
 		aspect-ratio: $ratio;
-		max-width: none;
-		margin-right: 30px
+		max-width: initial;
+		margin-right: $space;
 	}
 
 	&--twitter {
@@ -39,16 +41,17 @@
 
 	&--line {
 		@include btn;
-		background-color: #06c655;
+		background-color: #00b900;
+		padding: 0 $space/2 0 $space/4;
 	}
 
 	&__prepend {
 		&--twitter {
-			@include prepend(4/1);
+			@include prepend('37 / 30');
 		}
 
 		&--line {
-			@include prepend(1/1);
+			@include prepend('1 / 1');
 		}
 	}
 }
