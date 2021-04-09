@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+@use "./../mixin";
+
+.l-shareBtnWrapper {
+	@include mixin.widthMain;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.shareBtn {
+	// 変数
+	// スペースの基準
+	$space: 8px;
+	$twitter-color: #1DA1F2;
+	$line-color: #00b900;
+
+	// mixin
+	// ボタン
+	@mixin btn {
+		color: #fff;
+		margin-right: 1rem;
+		padding: $space;
+		font-size: 0.8em;
+		text-decoration: none;
+	}
+
+	// アイコン部分
+	@mixin body {
+		max-width: initial;
+	}
+
+	// ホバー・タップ時エフェクト
+
+
+	// スタイル
+	&--twitter {
+		@include btn;
+		background-color: $twitter-color;
+
+	}
+
+	&--line {
+		@include btn;
+		background-color: $line-color;
+		padding: 1px $space/2;
+	}
+
+	&__body {
+		&--twitter {
+			@include body;
+		}
+
+		&--line {
+			@include body;
+		}
+	}
+}

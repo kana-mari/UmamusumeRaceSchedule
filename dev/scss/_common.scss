@@ -12,7 +12,7 @@ body {
 		sans-serif;
 }
 
-p{
+p {
 	margin: 0.25rem 0;
 }
 
@@ -23,4 +23,17 @@ cite {
 
 address {
 	font-style: normal;
+}
+
+a:link {
+	color: #1565c0;
+}
+
+a:visited {
+	color: #7b1fa2;
+}
+
+a:hover,
+a:active {
+	color: #00c853;
 }
