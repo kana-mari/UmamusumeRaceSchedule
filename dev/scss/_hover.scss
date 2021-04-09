@@ -10,19 +10,8 @@
  */
 
 /* Push */
-@-webkit-keyframes hvr-push {
-	50% {
-		transform: scale(0.8);
-	}
-
-	100% {
-		transform: scale(1);
-	}
-}
-
 @keyframes hvr-push {
 	50% {
-		-webkit-transform: scale(0.8);
 		transform: scale(0.8);
 	}
 
@@ -43,6 +32,6 @@
 .hvr-push:active {
 	animation-name: hvr-push;
 	animation-duration: 0.3s;
-	animation-timing-function: linear;
+	animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28); // Out・Back（chrome dev tools）
 	animation-iteration-count: 1;
 }
