@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "Browser-Sync:dev": "browser-sync start --server --startPath './dev/index.html'",
-    "Browser-Sync:public": "browser-sync start --server --startPath './public/index.html'",
+    "Browser-Sync": "browser-sync start --server --startPath './public/index.html' --files='./public/index.html, ./public/style.min.css, ./public/index.min.js'",
     "Compile:sass-all": "run-s Compile:sass2css Autoprefixer",
     "Compile:sass2css": "sass dev/scss/style.scss --style=compressed public/css/style.min.css",
     "Autoprefixer": "postcss public/css/style.min.css --map --use autoprefixer --output public/css/style.min.css",
@@ -19,6 +18,7 @@
   "license": "None",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
+    "hover.css": "^2.3.2",
     "htmlhint": "^0.14.2",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.2.9",
@@ -27,5 +27,10 @@
     "webpack": "^5.30.0",
     "webpack-cli": "^4.6.0",
     "webpack-merge": "^5.7.3"
-  }
+  },
+  "browserslist": [
+    "last 2 version",
+    ">= 1% in JP",
+    "not dead"
+  ]
 }

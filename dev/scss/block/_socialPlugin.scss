@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+@use "./../mixin";
+
+.socialPlugin {
+	@include mixin.layout;
+	@include mixin.widthMain;
+	margin-bottom: 4rem;
+}
