@@ -4,17 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "Browser-Sync:dev": "browser-sync start --server --startPath './dev/index.html'",
-    "Browser-Sync:public": "browser-sync start --server --startPath './public/index.html'",
+    "Browser-Sync": "browser-sync start --server --startPath './public/index.html' --files='./public/index.html, ./public/style.min.css, ./public/index.min.js'",
     "Compile:sass-all": "run-s Compile:sass2css Autoprefixer",
     "Compile:sass2css": "sass dev/scss/style.scss --style=compressed public/css/style.min.css",
     "Autoprefixer": "postcss public/css/style.min.css --map --use autoprefixer --output public/css/style.min.css",
     "webpack:development": "webpack --config ./webpack/webpack.config.dev.js",
     "webpack:production": "webpack --config ./webpack/webpack.config.pro.js",
+    "firebase:preview": "firebase hosting:channel:deploy release_preview",
+    "firebase:deploy": "firebase deploy --only hosting",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "kana-mari",
-  "license": "ISC",
+  "license": "None",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "htmlhint": "^0.14.2",
@@ -22,8 +23,13 @@
     "postcss": "^8.2.9",
     "postcss-cli": "^8.3.1",
     "sass": "^1.32.8",
-    "webpack": "^5.30.0",
+    "webpack": "^5.31.0",
     "webpack-cli": "^4.6.0",
     "webpack-merge": "^5.7.3"
-  }
+  },
+  "browserslist": [
+    "last 2 version",
+    ">= 1% in JP",
+    "not dead"
+  ]
 }
