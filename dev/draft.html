@@ -9,7 +9,10 @@
 	<meta name="description" content="ゲーム「ウマ娘～」の距離別？レーススケジュールです。">
 	<style>
 		/* レイアウトの叩き台 */
-		:root {}
+		:root {
+			/* 済 */
+			--hf-color: #0ab2cc
+		}
 
 		* {
 			box-sizing: border-box;
@@ -20,11 +23,14 @@
 		}
 
 		header {
-			background-color: #ccff90;
+			/* 済 */
+			background-color: var(--hf-color);
+			color: white;
 		}
 
 		section,
-		header {
+		header,
+		footer {
 			display: grid;
 			grid-template-columns:
 				[full-start] minmax(1em, 1fr) [main-start] minmax(0, 40em) [main-end] minmax(1em, 1fr) [full-end];
@@ -39,28 +45,58 @@
 		}
 
 		.l-wrapperTl {
+			/* 済 */
 			grid-column: full;
 			overflow: auto;
 		}
 
 		figure {
+			/* 済 */
 			margin: 0;
 			padding: 0;
 			width: 2500px;
 		}
 
 		section {
+			/* 済 */
 			border: 1px solid rgba(100, 221, 23, 1);
 			margin: 2em 1em;
-			border-radius: 5px;
 		}
 
 		h2 {
+			/* 済 */
 			margin-top: 0;
-			padding: 0.25em 0.5em;
+			padding: 0.5rem 1rem;
 			color: white;
 			background: linear-gradient(180deg, rgba(100, 221, 23, 1) 0%, #aeea00 100%);
 			text-shadow: 1px 1px 3px #558b2f;
+			display: flex;
+			justify-content: flex-start;
+			align-items: baseline;
+		}
+
+		h2>img {
+			/* 済 */
+			filter: drop-shadow(1px 1px 3px #558b2f);
+			margin-right: 0.3em;
+		}
+
+		section p {
+			/* 済 */
+			margin: 0.5rem 1rem;
+		}
+
+		footer {
+			/* 済 */
+			background-color: var(--hf-color);
+			color: white;
+			padding: 1em 0;
+
+		}
+
+		footer>* {
+			/* 済 */
+			grid-column: main;
 		}
 	</style>
 </head>
@@ -79,7 +115,7 @@
 				</div>
 			</section>
 			<section>
-				<h2>マイル（重賞）</h2>
+				<h2><img src="./../public/img/icon_horseshoe_WH.svg" width="20px" height="20px" alt=""> マイル（重賞）</h2>
 				<div class="l-wrapperTl">
 					<figure class="timeline" id="js-mile"></figure>
 				</div>
@@ -105,9 +141,13 @@
 			</section>
 		</article>
 	</main>
+	<footer>
+		<address>作者：はち</address>
+	</footer>
 	<!-- Google Charts-->
 	<script src="https://www.gstatic.com/charts/loader.js" crossorigin="anonymous"></script>
 	<script src="./src/bundle.js"></script>
+	<a href="http://" target="_blank" rel=""></a>
 </body>
 
 </html>

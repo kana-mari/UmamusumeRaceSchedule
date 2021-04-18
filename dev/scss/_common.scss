@@ -1,5 +1,7 @@
 @charset 'utf-8';
 
+// 全共通
+// resetCSSのオーバーライド
 body {
 	color: #333;
 	font-family: "Helvetica Neue",
@@ -8,4 +10,30 @@ body {
 		"Hiragino Sans",
 		Meiryo,
 		sans-serif;
+}
+
+p {
+	margin: 0.25rem 0;
+}
+
+cite {
+	font-style: normal;
+	font-weight: bold;
+}
+
+address {
+	font-style: normal;
+}
+
+a:link {
+	color: #1565c0;
+}
+
+a:visited {
+	color: #7b1fa2;
+}
+
+a:hover,
+a:active {
+	color: #00c853;
 }

@@ -1,54 +1,90 @@
-doctype html
+<!DOCTYPE html>
 html(lang="ja")
 	head
 		meta(charset="UTF-8")
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		title 重賞距離別レーススケジュール　ウマ娘
+		title ウマ娘 重賞距離別レーススケジュール表
 		// favicon
 		link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
 		// CSS
 		link(rel="stylesheet", href="style.css")
 		// google fonts
-		link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin="anonymous")
-		link(href='https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;600;700;800;900&display=swap' rel='stylesheet' crossorigin="anonymous")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous")
+		link(href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;600;700;800;900&display=swap" rel="stylesheet" crossorigin="anonymous")
 		// SEO
-		meta(name="description", content="ゲーム「ウマ娘～」の距離別？レーススケジュールです。")
-		// Todo: robot
-		// Todo: OGP
+		meta(name="description", content="ゲーム「ウマ娘 プリティーダービー」の距離別レーススケジュール表です。URAファイナルズのコース距離調整にどうぞ。")
+		meta(name="robots" content="index, follow, noarchive")
+		// favicon
+		link(rel="icon" href="favicon.svg" type="image/svg+xml")
+		// SVG favicon未対応ブラウザ用
+		link(rel="icon alternate" href="apple-touch-icon.png" sizes="180x180" type="image/png")
+		// その他favicon
+		link(rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180" type="image/png")
+		link(rel="mask-icon" href="pinned-tab-icon.svg" color="#64dd17" type="image/svg+xml")
+		// OGP
+		meta(property="og:title" content="ウマ娘 重賞距離別レーススケジュール表")
+		meta(property="og:type" content="website")
+		meta(property="og:image" content="")
+		meta(property="og:image:width" content="1200")
+		meta(property="og:image:height" content="630")
+		meta(property="og:url" content="")
+		meta(property="og:description" content="ゲーム「ウマ娘 プリティーダービー」の距離別レーススケジュール表です。URAファイナルズのコース距離調整にどうぞ。")
+		meta(property="og:locale" content="ja")
+		meta(name="twitter:card" content="summary")
 	body
 		main.main
 			article.article
 				header.header
-					h1.header__title ウマ娘 距離別レーススケジュール
-					p.header__description descriptionと一緒
+					h1(class='header__title')
+						div ウマ娘 
+							wbr
+							| 距離別レーススケジュール表
+
+					.header__description
+						p ゲーム「
+							cite ウマ娘 プリティーダービー
+							| 」の距離別レーススケジュール表です。
+							br
+							| URAファイナルズのコース距離調整にどうぞ。
+						p 年は以下のように読み替えてください。
+						ul.list
+							li(class='list__item') 2001→ジュニア級（1年目）
+							li(class='list__item') 2002→クラシック級（2年目）
+							li(class='list__item') 2003→シニア級（3年目）
 				section.card
 					h2.card__title 短距離
+						img.card__titlePrepend(src="./../public/img/icon_horseshoe_WH.svg", width="20", height="20", alt="")
 					p.card__text 重賞
 					div.l-wrapperTl
 						figure#js-short.timeline
 				section.card 
 					h2.card__title マイル
+						img.card__titlePrepend(src="./../public/img/icon_horseshoe_WH.svg", width="20", height="20", alt="")
 					p.card__text 重賞
 					div.l-wrapperTl
 						figure#js-mile.timeline
 				section.card 
 					h2.card__title 中距離
+						img.card__titlePrepend(src="./../public/img/icon_horseshoe_WH.svg", width="20", height="20", alt="")
 					p.card__text 重賞
 					div.l-wrapperTl
 						figure#js-middle.timeline
 				section.card
 					h2.card__title 長距離
+						img.card__titlePrepend(src="./../public/img/icon_horseshoe_WH.svg", width="20", height="20", alt="")
 					p.card__text 重賞・OP
+						img.card__titlePrepend(src="./../public/img/icon_horseshoe_WH.svg", width="20", height="20", alt="")
 					div.l-wrapperTl
 						figure#js-long.timeline
 				section.card
 					h2.card__title ダート
+						img.card__titlePrepend(src="./../public/img/icon_horseshoe_WH.svg", width="20", height="20", alt="")
 					p.card__text 重賞
 					div.l-wrapperTl
 						figure#js-dart.timeline
-		footer
-			address はち
-				a(href="http://") @8_hachi
+		footer.footer
+			address 制作者：はち
+				a(href="https://twitter.com/8_hachi" target="_blank" rel="noopener external") @8_hachi
 		script(src="https://www.gstatic.com/charts/loader.js" crossorigin="anonymous")
 		script(src="./src/bundle.js")

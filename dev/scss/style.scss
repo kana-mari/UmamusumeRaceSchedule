@@ -5,9 +5,15 @@
 
 // 共通設定
 @use "./common";
-// レイアウト
-@use "./layout";
 
 // ブロック
-@use "./heading";
-@use "./timeline";
+@use "./block/header";
+@use "./block/list";
+@use "./block/card";
+@use "./block/timeline";
+@use "./block/socialPlugin";
+@use "./block/shareBtn";
+@use "./block/footer";
+
+// ホバーエフェクト
+@use "./hover";

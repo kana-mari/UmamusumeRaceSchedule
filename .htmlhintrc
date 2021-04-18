@@ -1,7 +1,7 @@
 {
   "doctype-first": true,
   "doctype-html5": true,
-  "head-script-disabled": true,
+  "head-script-disabled": false,
   "style-disabled": false,
   "title-require": true,
 

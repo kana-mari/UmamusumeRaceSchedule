@@ -1,0 +1,40 @@
+@charset 'utf-8';
+
+@use "./../mixin";
+
+// カードの色
+$card-main-color:#3CD500;
+$card-sub-color:#e2ff79;
+$card-shadow-color:#558b2f;
+
+.card {
+	@include mixin.layout;
+	border: 1px solid $card-main-color;
+	margin: 4rem 1rem;
+
+	>* {
+		@include mixin.widthFull;
+	}
+
+	&__title {
+		margin-top: 0;
+		padding: 0.5rem 1rem;
+		color: white;
+		background: linear-gradient(135deg, $card-main-color 0%, $card-sub-color 100%);
+		font-family: 'M PLUS 1p', sans-serif;
+		font-weight: 800;
+		text-shadow: 0px 0px 6px $card-shadow-color;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	&__titlePrepend {
+		filter: drop-shadow(0px 0px 3px $card-shadow-color);
+		margin-right: 0.3em;
+	}
+
+	&__text {
+		margin: 0.5rem 1rem;
+	}
+}
