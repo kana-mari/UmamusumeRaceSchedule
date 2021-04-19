@@ -1,3 +1,7 @@
+/**
+ * drawChartのオプション
+ * @type {object}
+ */
 const option = {
 	timeline: {
 		barLabelStyle: {
