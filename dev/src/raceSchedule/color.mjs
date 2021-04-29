@@ -1,10 +1,10 @@
 /**
  * チャートの色 グレード別
  * @type {object}
- * @property {string} G1
- * @property {string} G2
- * @property {string} G3
- * @property {string} OP
+ * @property {string} - GⅠ
+ * @property {string} - GⅡ
+ * @property {string} - GⅢ
+ * @property {string} - OP
 */
 const chartColor = {
 	'g1': '#304FFE',
