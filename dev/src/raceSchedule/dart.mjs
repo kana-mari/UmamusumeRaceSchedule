@@ -28,8 +28,8 @@ const dart = [
 	['GⅠ', 'JBCクラシック', chartColor.g1, new Date('2003', '10', '1'), new Date('2003', '10', '15')],
 	['GⅠ', 'JPダートダービー', chartColor.g1, new Date('2002', '6', '1'), new Date('2002', '6', '15')],
 	['GⅠ', '帝王賞', chartColor.g1, new Date('2003', '5', '16'), new Date('2003', '5', '30')],
-	['GⅠ', '東京大賞典', chartColor.g1, new Date('2002', '11', '16'), new Date('2002', '11', '31')],
-	['GⅠ', '東京大賞典', chartColor.g1, new Date('2003', '11', '16'), new Date('2003', '11', '31')],
+	['GⅠ', '東京大賞', chartColor.g1, new Date('2002', '11', '16'), new Date('2002', '11', '31')],
+	['GⅠ', '東京大賞', chartColor.g1, new Date('2003', '11', '16'), new Date('2003', '11', '31')],
 	['GⅢ', 'シリウスS', chartColor.g3, new Date('2002', '8', '16'), new Date('2002', '8', '30')],
 	['GⅢ', 'シリウスS', chartColor.g3, new Date('2003', '8', '16'), new Date('2003', '8', '30')],
 	['GⅢ', '平安S', chartColor.g3, new Date('2003', '4', '16'), new Date('2003', '4', '31')]];
