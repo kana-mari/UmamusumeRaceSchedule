@@ -39,12 +39,18 @@ src
 - npm-run-allを導入、npm scriptを簡易タスクランナーにした
 
 ## 使用npmパッケージ
-- autoprefixer
-- htmlhint
-- npm-run-all
-- postcss
+- autoprefixer [![npm version](https://badge.fury.io/js/autoprefixer.svg)](https://badge.fury.io/js/autoprefixer)
+- htmlhint [![npm version](https://badge.fury.io/js/htmlhint.svg)](https://badge.fury.io/js/htmlhint)
+- npm-run-all [![npm version](https://badge.fury.io/js/npm-run-all.svg)](https://badge.fury.io/js/npm-run-all)
+- postcss [![npm version](https://badge.fury.io/js/postcss.svg)](https://badge.fury.io/js/postcss)
 	- postcss-cli
-- sass
-- webpack
+- sass [![npm version](https://badge.fury.io/js/sass.svg)](https://badge.fury.io/js/sass)
+- webpack [![npm version](https://badge.fury.io/js/webpack.svg)](https://badge.fury.io/js/webpack)
 	- webpack-cli
 	- webpack-merg
+
+# 作者情報
+- 作成者：[kana-mari]()
+
+# ライセンス
+- None
