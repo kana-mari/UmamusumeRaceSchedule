@@ -50,7 +50,7 @@ src
 	- webpack-merg
 
 # 作者情報
-- 作成者：[kana-mari]()
+- 作成者：[kana-mari](https://github.com/kana-mari)
 
 # ライセンス
 - None
